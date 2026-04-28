@@ -1,0 +1,174 @@
+<!-- home.html (Homepage) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Grandpa's Appraisals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Grandpa's Appraisal Services</h1>
+  <p>Trusted • Experienced • Reliable</p>
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="index.html">About Me</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h2>Welcome</h2>
+    <p>Professional appraisal services you can trust. Learn more about my experience or get in touch today.</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Grandpa's Appraisals</p>
+</footer>
+
+</body>
+</html>
+
+
+<!-- index.html (About Me Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Grandpa's Appraisals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Grandpa's Appraisal Services</h1>
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="index.html">About Me</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h2>About Me</h2>
+    <p><!-- INSERT GRANDPA BIO HERE -->
+    Your grandpa's story, experience, and personality go here.</p>
+  </div>
+
+  <div class="card">
+    <h2>Qualifications</h2>
+    <ul>
+      <!-- INSERT QUALIFICATIONS HERE -->
+      <li>Example Qualification 1</li>
+      <li>Example Qualification 2</li>
+      <li>Example Qualification 3</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Grandpa's Appraisals</p>
+</footer>
+
+</body>
+</html>
+
+
+<!-- contact.html (Contact Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Grandpa's Appraisals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Contact Grandpa</h1>
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="index.html">About Me</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h2>Contact Information</h2>
+    <p><!-- INSERT CONTACT INFO HERE -->
+    Phone: (123) 456-7890</p>
+    <p>Email: example@email.com</p>
+    <p>Location: Your City, State</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Grandpa's Appraisals</p>
+</footer>
+
+</body>
+</html>
+
+
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #34495e;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #2c3e50;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #2c3e50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
