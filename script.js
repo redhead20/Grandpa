@@ -1,12 +1,27 @@
-function getEstimate() {
-  const item = document.getElementById('item').value;
-  const result = document.getElementById('result');
+const text = "Trusted • Experienced • Reliable";
+let i = 0;
+const speed = 70;
+const target = document.getElementById("typing");
 
-  if (!item) {
-    result.textContent = "Please enter an item.";
-    return;
+function typeWriter() {
+  if (target && i < text.length) {
+    target.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
   }
-
-  const fakeValue = Math.floor(Math.random() * 1000) + 50;
-  result.textContent = `Estimated value of ${item}: $${fakeValue}`;
 }
+
+window.onload = () => {
+  typeWriter();
+
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  cards.forEach(card => observer.observe(card));
+};

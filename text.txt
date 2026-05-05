@@ -1,122 +1,133 @@
-<!-- home.html (Homepage) -->
+<!-- index.html (Homepage) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Grandpa's Appraisals</title>
+  <title>Thacker Appraisals</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <header>
-  <h1>Grandpa's Appraisal Services</h1>
-  <p>Trusted • Experienced • Reliable</p>
+  <h1>Thacker Appraisals</h1>
+  <p id="typing"></p>
 </header>
 
 <nav>
-  <a href="home.html">Home</a>
-  <a href="index.html">About Me</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
   <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
-  <div class="card">
+  <div class="card hidden">
     <h2>Welcome</h2>
     <p>Professional appraisal services you can trust. Learn more about my experience or get in touch today.</p>
   </div>
 </div>
 
 <footer>
-  <p>© 2026 Grandpa's Appraisals</p>
+  <p>© 2026 Thacker Appraisals</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
 
 
-<!-- index.html (About Me Page) -->
+<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Grandpa's Appraisals</title>
+  <title>About - Thacker Appraisals</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <header>
-  <h1>Grandpa's Appraisal Services</h1>
+  <h1>Thacker Appraisals</h1>
 </header>
 
 <nav>
-  <a href="home.html">Home</a>
-  <a href="index.html">About Me</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
   <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
-  <div class="card">
+  <div class="card hidden">
     <h2>About Me</h2>
-    <p><!-- INSERT GRANDPA BIO HERE -->
-    Your grandpa's story, experience, and personality go here.</p>
+    <p>Serving homeowners, buyers, lenders, and real estate professionals throughout Colorado with decades of residential appraisal experience. Thacker Appraisal Services provides trusted, professional property valuations backed by long-term industry expertise.</p>
   </div>
 
-  <div class="card">
-    <h2>Qualifications</h2>
+  <div class="card hidden">
+    <h2>Service Area</h2>
+    <p>Colorado Counties: Adams, Arapahoe, Broomfield, Clear Creek, Denver, Douglas, Gilpin, Jefferson, and Park.</p>
+  </div>
+
+  <div class="card hidden">
+    <h2>Qualifications & Credentials</h2>
+    <h3>Professional Experience</h3>
     <ul>
-      <!-- INSERT QUALIFICATIONS HERE -->
-      <li>Example Qualification 1</li>
-      <li>Example Qualification 2</li>
-      <li>Example Qualification 3</li>
+      <li>1986–1987: Staff Appraiser, City Fed Appraisal Services</li>
+      <li>1987: Independent Fee Appraiser</li>
+      <li>1990–1991: Staff Appraiser, TRW Appraisal Services</li>
+      <li>1991–1996: Staff Appraiser, Bank Western, Colorado National Bank, and FBS Mortgage</li>
+      <li>1996–Present: Independent Appraiser, Thacker Appraisal Services Inc.</li>
+    </ul>
+
+    <h3>Education & Certifications</h3>
+    <ul>
+      <li>B.S. Business Management (1984) – Brigham University, Provo, Utah</li>
+      <li>Certified Residential Appraiser since 1992 (Colorado CR1315694)</li>
+      <li>Active Certified License – Expires 12/31/2027</li>
+      <li>FHA Approved Appraiser</li>
+      <li>Member of Rocky Mountain Appraiser Association (RMAA)</li>
     </ul>
   </div>
 </div>
 
 <footer>
-  <p>© 2026 Grandpa's Appraisals</p>
+  <p>© 2026 Thacker Appraisals</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
 
 
-<!-- contact.html (Contact Page) -->
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Grandpa's Appraisals</title>
+  <title>Contact - Thacker Appraisals</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <header>
-  <h1>Contact Grandpa</h1>
+  <h1>Contact Thacker Appraisals</h1>
 </header>
 
 <nav>
-  <a href="home.html">Home</a>
-  <a href="index.html">About Me</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
   <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
-  <div class="card">
+  <div class="card hidden">
     <h2>Contact Information</h2>
-    <p><!-- INSERT CONTACT INFO HERE -->
-    Phone: (123) 456-7890</p>
+    <p>Phone: (123) 456-7890</p>
     <p>Email: example@email.com</p>
-    <p>Location: Your City, State</p>
+    <p>Location: Colorado</p>
   </div>
 </div>
 
 <footer>
-  <p>© 2026 Grandpa's Appraisals</p>
+  <p>© 2026 Thacker Appraisals</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
 
@@ -128,10 +139,14 @@ body {
   background-color: #f4f4f4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background: #2c3e50;
   color: white;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -145,10 +160,12 @@ nav a {
   color: white;
   padding: 14px 20px;
   text-decoration: none;
+  transition: transform 0.2s ease;
 }
 
 nav a:hover {
   background: #2c3e50;
+  transform: scale(1.05);
 }
 
 .container {
@@ -161,6 +178,14 @@ nav a:hover {
   margin: 15px 0;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 footer {
@@ -168,7 +193,45 @@ footer {
   padding: 10px;
   background: #2c3e50;
   color: white;
-  position: fixed;
-  bottom: 0;
+  margin-top: 30px;
   width: 100%;
 }
+
+
+// script.js
+const text = "Trusted • Experienced • Reliable";
+let i = 0;
+const speed = 70;
+const target = document.getElementById("typing");
+
+function typeWriter() {
+  if (target && i < text.length) {
+    target.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.onload = () => {
+  typeWriter();
+
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  cards.forEach(card => observer.observe(card));
+};
+
+
+
+
+<h2>Contact Information</h2>
+    <p><!-- INSERT CONTACT INFO HERE -->
+    Phone: (303) 909-0809</p>
+    <p>Email: www.thackerappraisal.com</p>
+    <p>Location: Littleton, State</p>
